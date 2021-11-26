@@ -1,0 +1,29 @@
+case 'artinama':
+        case 'arti':
+            if (args.length === 0)  return await client.reply(from, 'Kirim perintah #artinama <nama kamu>\nConntoh #artinama Dandi', id)
+            const namamu = body.slice(5)
+            const keyy = `oSDiGL-bx2kTP-5iKgyf-qUFTcg-FsmnHf`
+            const artinama = await get.get(`https://api.i-tech.id/tools/arti?key=${keyy}=`+ namamu).json()
+            console.log('Shortlink: ' + artinama)
+            if (artinama.error) return await client.reply(from, artinama.error, id)
+            const captionartinama = `Arti Nama: ${artinama.arti}`
+            await client.sendText(from, captionartinama, message.id)
+            break
+case 'pantun' :
+            client.sendText(from, pantunn())
+            break
+const pantunn = require('./lib/pantu')
+case 'artinama':
+        case 'arti':
+            if (args.length === 0)  return await client.reply(from, 'Kirim perintah #artinama <nama kamu>\nConntoh #artinama Dandi', id)
+            const namamu = body.slice(5)
+            const keyy = ``
+            const artinama = await get.get(`https://api.i-tech.id/tools/arti?key=${keyy}=`+ namamu).json()
+            console.log('Shortlink: ' + artinama)
+            if (artinama.error) return await client.reply(from, artinama.error, id)
+            const captionartinama = `Arti Nama: ${artinama.arti}`
+            await client.sendText(from, captionartinama, message.id)
+case 'pantun' :
+            client.sendText(from, pantunn())
+            break
+const pantunn = require('./lib/pantu')
